@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
-    "description": "This extension help you to automatic delete your old backup created by system by keeping selected days backup.",
+    "description": "Extension automatically deletes backups created by Magento backup tool. It keeps backup for selected days only.",
     "authors": [
     {
         "name": "V Group Inc",
