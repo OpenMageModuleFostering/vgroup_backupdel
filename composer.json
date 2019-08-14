@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Vgroup_Backupdel",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "This extension help you to automatic delete your old backup created by system by keeping selected days backup.",
+    "authors": [
+    {
+        "name": "V Group Inc",
+        "email": "akhilesh.chourey@vgroup.net"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

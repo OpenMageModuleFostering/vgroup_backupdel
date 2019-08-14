@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module configuration
+ *
+ * @author Magento
+ */
+-->
+<config>
+    <modules>
+        <Vgroup_Backupdel>
+            <version>1.0</version>
+        </Vgroup_Backupdel>
+    </modules>
+    <global>
+        <models>
+            <backupdel>
+                <class>Vgroup_Backupdel_Model</class>
+                <resourceModel>backupdel_resource</resourceModel>
+            </backupdel>
+        </models>
+        <helpers>
+            <backupdel>
+                <class>Vgroup_Backupdel_Helper</class>
+            </backupdel>
+        </helpers>
+        <blocks>
+           <backupdel>
+                <class>Vgroup_Backupdel_Block</class>
+            </backupdel>
+        </blocks>
+    </global>
+    <frontend>
+        <routers> 
+            <vgroup_backupdel>
+                <use>standard</use>
+                <args> 
+                    <module>Vgroup_Backupdel</module> 
+                    <frontName>backupdel</frontName>
+                </args> 
+            </vgroup_backupdel>
+        </routers>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Vgroup_Backupdel before="Mage_Adminhtml">Vgroup_Backupdel_Adminhtml</Vgroup_Backupdel>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <default>
+        <backupdel>
+            <view>
+                <backupdel>00</backupdel>
+            </view>
+        </backupdel>
+    </default>
+    <crontab>
+        <jobs>
+            <vgroup_backupdel_send>
+                <schedule>
+                    <cron_expr>0 23 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>backupdel/observer::method</model>
+                </run>
+            </vgroup_backupdel_send>
+        </jobs>
+    </crontab>
+</config>
