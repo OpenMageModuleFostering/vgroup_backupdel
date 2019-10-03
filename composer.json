@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Vgroup_Backupdel",
+    "name": "OpenMageModuleFostering\/Vgroup_Backupdel",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "Extension automatically deletes backups created by Magento backup tool. It keeps backup for selected days only.",
     "authors": [
-    {
-        "name": "V Group Inc",
-        "email": "akhilesh.chourey@vgroup.net"
-    }
-],
+        {
+            "name": "V Group Inc",
+            "email": "akhilesh.chourey@vgroup.net"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
