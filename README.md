@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Extension automatically deletes backups created by Magento backup tool. It keeps backup for selected days only.
